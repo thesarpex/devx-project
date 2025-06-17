@@ -423,7 +423,6 @@ nav h1 {
 }
 
 /*Responsive Design for Join Our Community Section*/
-
 @media (max-width: 768px) {
   .join-section {
     display: grid;
