@@ -1,0 +1,715 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Styling Navigation Bar*/
+
+nav h1 {
+  font-weight: 540;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(248, 245, 245);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.nav-bar a:hover {
+  color: #60269e;
+}
+
+#sign-up-btn {
+  background-color: #60269e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/*Responsive Design for Navigation Bar*/
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px;
+  }
+
+  .nav-bar-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar a {
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .nav-bar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+/*Styling Welcome Section*/
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.welcome-btn {
+  border: 1px solid #60269e;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.welcome-main-text {
+  font-size: 60px;
+  text-align: center;
+  line-height: 1;
+  max-width: 800px;
+  margin: 40px 0 0;
+}
+
+.welcome-sub-text {
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.get-started-btn {
+  text-decoration: none;
+  background-color: #60269e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/*Responsive Design for Welcome Section*/
+@media (max-width: 768px) {
+  .welcome-main-text {
+    font-size: 50px;
+    max-width: 800px;
+  }
+
+  .welcome-btn {
+    font-size: 14px;
+  }
+
+  .welcome-sub-text {
+    font-size: 14px;
+  }
+
+  .get-started-btn {
+    font-size: 14px;
+  }
+}
+
+/*Styling Achievements Section*/
+
+.achievements-section-container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.achievements-section-container {
+  background-color: rgb(248, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0 100px;
+  padding: 40px 0 60px;
+}
+
+.achievements-section {
+  display: flex;
+  gap: 50px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-number-container {
+  line-height: 0.5;
+}
+
+.text {
+  font-size: 11px;
+  color: #60269e;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Responsive Design for Achievements Section*/
+@media (max-width: 768px) {
+  .achievements-section {
+    display: flex;
+    padding: 20px;
+  }
+
+  .achievements-section-container {
+    margin-bottom: 40px;
+  }
+  .text {
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievements-section-container h2 {
+    font-size: 20px;
+  }
+
+  .text-number-container {
+    text-align: center;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
+
+/*Styling Story Section*/
+.story-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding-bottom: 100px;
+  margin-bottom: 40px;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.story-text p {
+  max-width: 300px;
+}
+
+.story-section img {
+  border-radius: 15px;
+  margin-right: 55px;
+}
+
+.story-text h2 {
+  font-size: 40px;
+}
+
+.first-story-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.style-africa {
+  color: #60269e;
+}
+
+/*Responsive Design for Story Section*/
+@media (max-width: 768px) {
+  .story-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .story-text p {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .story-section h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .story-section img {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-text p {
+    max-width: 300px;
+  }
+
+  .story-section img {
+    width: 300px;
+    height: 250px;
+    margin-left: 110px;
+  }
+}
+
+/*Styling What Sets Us Apart Section*/
+.set-apart-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.set-apart-section h1 {
+  font-size: 35px;
+}
+
+.set-apart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(248, 245, 245);
+  border-radius: 25px;
+  padding: 40px 180px 50px 180px;
+  margin-top: 10px;
+}
+
+.set-apart-container p {
+  text-align: center;
+  max-width: 550px;
+}
+
+.left-arrow {
+  background-color: white;
+  padding: 12px 15px;
+  border-radius: 100px;
+  position: relative;
+  top: 110px;
+  right: 455px;
+  box-shadow: 3px 3px 5px rgba(222, 102, 233, 0.2),
+    -3px 3px 5px rgba(222, 102, 233, 0.2);
+}
+
+.right-arrow {
+  background-color: white;
+  padding: 12px 15px;
+  border-radius: 100px;
+  position: relative;
+  bottom: 200px;
+  left: 455px;
+  box-shadow: 3px 3px 5px rgba(222, 102, 233, 0.2),
+    -3px 3px 5px rgba(222, 102, 233, 0.2);
+}
+
+/*Responsive Design What Sets Us Apart Section*/
+
+@media (max-width: 768px) {
+  .set-apart-container {
+    padding: 40px 10px;
+    font-size: 14px;
+  }
+
+  .left-arrow {
+    top: 93px;
+    right: 203px;
+  }
+
+  .right-arrow {
+    background-color: white;
+    position: relative;
+    bottom: 175px;
+    left: 202px;
+  }
+
+  .set-apart-section h1 {
+    font-size: 18px;
+  }
+
+  .set-apart-container h2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .set-apart-container p {
+    font-size: 12px;
+    text-align: center;
+    max-width: 385px;
+  }
+}
+
+/*Styling Join Our Community Section*/
+.bottom-half {
+  background-color: rgb(248, 245, 245);
+  padding-bottom: 30px;
+}
+
+.join-section {
+  display: flex;
+  padding: 100px 180px 180px 180px;
+  justify-content: center;
+}
+
+.join-section-left,
+.join-section-right {
+  margin: 0 60px;
+}
+
+.join-section-left h1 {
+  font-size: 40px;
+  position: relative;
+  max-width: 450px;
+}
+
+.bullets li {
+  max-width: 400px;
+  line-height: 1.4;
+}
+
+.join-section-right {
+  position: relative;
+}
+
+.back-image {
+  position: absolute;
+  margin-top: 12px;
+  right: 48px;
+  z-index: 0;
+}
+
+.side-image {
+  margin-top: 130px;
+  width: 400px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 15px;
+  z-index: 99;
+  position: relative;
+}
+
+.bottom-image {
+  position: absolute;
+  margin-top: 325px;
+  right: 400px;
+  z-index: 0;
+}
+
+/*Responsive Design for Join Our Community Section*/
+
+@media (max-width: 768px) {
+  .join-section {
+    display: grid;
+    justify-content: center;
+  }
+
+  .join-section-left h1 {
+    font-size: 30px;
+    position: relative;
+    max-width: 450px;
+  }
+
+  .bullets li {
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  .side-image {
+    width: 330px;
+  }
+
+  .bottom-image {
+    position: absolute;
+    margin-top: 325px;
+    right: 320px;
+    z-index: 0;
+  }
+}
+
+/*Styling Grow Your Career Section*/
+.grow-section {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px 60px 40px;
+  background-color: #60269e;
+  border-radius: 20px;
+  margin: 0 176px 55px 176px;
+}
+
+.grow-section-left,
+.grow-section-right {
+  margin: 0 60px;
+}
+
+.grow-section-left h1 {
+  font-size: 26px;
+  max-width: 300px;
+  color: white;
+}
+
+.grow-section-left p {
+  font-weight: 400;
+  max-width: 350px;
+  color: white;
+}
+
+.course-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.course-btn {
+  margin-top: 40px;
+}
+
+.grow-section-right img {
+  margin-top: 80px;
+  width: 450px;
+}
+
+/*Responsive Design for Grow Your Career Section*/
+@media (max-width: 768px) {
+  .grow-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px 60px 0px;
+    background-color: #60269e;
+    margin: 0 140px 150px 140px;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .grow-section-left h1 {
+    text-align: center;
+  }
+
+  .grow-section-left p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .course-btn {
+    text-align: center;
+  }
+
+  .course-btn a {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .grow-section-right img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grow-section {
+    margin: 0 120px 60px 120px;
+    padding: 20px 0px 40px 0px;
+  }
+
+  .grow-section-left h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .grow-section-right img {
+    width: 150px;
+    margin-top: 50px;
+  }
+
+  .grow-section-left p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .course-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .course-btn a {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+/*Styling Our Mentors Section*/
+.mentors-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mentors-container {
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  margin: 0 224px;
+  justify-content: center;
+}
+
+.a-mentor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.mentors-section h1 {
+  font-size: 30px;
+  margin-top: 64px;
+}
+
+.a-mentor-container img {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 200px;
+  margin-top: 30px;
+}
+
+.mentor-title {
+  color: #60269e;
+}
+
+.mentors-section p {
+  text-align: center;
+  position: relative;
+  max-width: 450px;
+  bottom: 30px;
+}
+
+.mentor-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50px;
+  margin: 0 20px;
+}
+
+.social-media {
+  display: flex;
+  position: relative;
+  bottom: 10px;
+}
+
+.social-media i {
+  font-size: 25px;
+  color: #555555;
+  margin: 0 10px;
+}
+
+/*Responsive Design for Our Mentors Section*/
+
+@media (max-width: 768px) {
+  .mentors-container {
+    grid-template-columns: 270px;
+    padding-top: 30px;
+  }
+
+  .a-mentor-container {
+    margin: 10px;
+  }
+}
+
+/*Styling Footer*/
+.footer {
+  background-color: #101828;
+  border-bottom: 1px solid #eee;
+  color: white;
+  padding: 50px 96px 70px 96px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.main-sect p {
+  max-width: 300px;
+}
+
+.sect h1 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.sect ul {
+  list-style-type: none;
+}
+
+.sect ul li {
+  position: relative;
+  right: 40px;
+  line-height: 2;
+}
+
+.sect ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #101828;
+  color: white;
+  padding: 30px 0;
+}
+
+.social-footer i {
+  margin: 20px 10px 0 10px;
+}
+
+/*Responsive Design for Footer*/
+@media (max-width: 600px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sect h1,
+  .main-sect h1 {
+    position: relative;
+    right: 20px;
+  }
+}
