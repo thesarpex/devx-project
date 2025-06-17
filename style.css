@@ -537,11 +537,10 @@ nav h1 {
 @media (max-width: 480px) {
   .grow-section {
     margin: 0 120px 60px 120px;
-    padding: 20px 0px 40px 0px;
+    padding: 20px 35px 40px 35px;
   }
 
   .grow-section-left h1 {
-    font-size: 18px;
     text-align: center;
   }
 
@@ -552,7 +551,6 @@ nav h1 {
 
   .grow-section-left p {
     text-align: center;
-    font-size: 10px;
   }
 
   .course-btn {
