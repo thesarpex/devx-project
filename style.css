@@ -535,7 +535,7 @@ nav h1 {
 
 @media (max-width: 480px) {
   .grow-section {
-    margin: 0 120px 60px 120px;
+    margin: 0 60px 60px 60px;
     padding: 20px 35px 40px 35px;
   }
 
