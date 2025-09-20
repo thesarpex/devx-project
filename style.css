@@ -308,46 +308,12 @@ nav h1 {
   max-width: 550px;
 }
 
-.left-arrow {
-  background-color: white;
-  padding: 12px 15px;
-  border-radius: 100px;
-  position: relative;
-  top: 110px;
-  right: 455px;
-  box-shadow: 3px 3px 5px rgba(222, 102, 233, 0.2),
-    -3px 3px 5px rgba(222, 102, 233, 0.2);
-}
-
-.right-arrow {
-  background-color: white;
-  padding: 12px 15px;
-  border-radius: 100px;
-  position: relative;
-  bottom: 200px;
-  left: 455px;
-  box-shadow: 3px 3px 5px rgba(222, 102, 233, 0.2),
-    -3px 3px 5px rgba(222, 102, 233, 0.2);
-}
-
 /*Responsive Design What Sets Us Apart Section*/
 
 @media (max-width: 768px) {
   .set-apart-container {
     padding: 40px 10px;
     font-size: 14px;
-  }
-
-  .left-arrow {
-    top: 93px;
-    right: 203px;
-  }
-
-  .right-arrow {
-    background-color: white;
-    position: relative;
-    bottom: 175px;
-    left: 202px;
   }
 
   .set-apart-section h1 {
